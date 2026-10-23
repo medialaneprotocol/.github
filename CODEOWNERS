@@ -1,0 +1,8 @@
+# Media Lane Protocol — code owners
+# Single maintainer; every path routes to the same owner.
+*                 @vitkuz573
+/spec/            @vitkuz573
+/src/             @vitkuz573
+/docs/            @vitkuz573
+/scripts/         @vitkuz573
+/.github/         @vitkuz573

@@ -1,0 +1,39 @@
+name: Feature / proposal
+description: Propose a change to the protocol, implementation, or tooling.
+title: "[proposal] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A specification change is a contract change: it carries the same obligations as a code change.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Specification (mlp)
+        - Rust core (mlp-core)
+        - Browser (mlp-ts)
+        - Wire schema (mlp-proto)
+        - Conformance (mlp-conformance)
+        - Harness (mlp-harness)
+        - CLI / tooling
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What is missing or wrong today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Which implementations and the conformance corpus need to move with this?
